@@ -1,1 +1,1 @@
-## Exercício de python 1 - DIO Global
+## Exercício de python 1 e 2 - DIO Global
