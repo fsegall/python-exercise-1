@@ -65,8 +65,6 @@ def aplicar_poupanca(*, saldo, valor, poupanca, extrato):
         saldo -= valor
         poupanca += valor
         extrato += f"Transferência para Poupança: R$ {valor:.2f}\n"
-        print("depósito feito", poupanca)
-        print("saldo atual", saldo)
 
     else:
         print("Operação falhou! O valor informado é inválido.")
@@ -79,8 +77,6 @@ def aplicar_poupanca(*, saldo, valor, poupanca, extrato):
 
 def resgatar(*, saldo, valor, poupanca, extrato):
     excedeu_saldo = valor > poupanca
-    print("antes do resgate", poupanca)
-    print("saldo atualantes do resgate", saldo)
     if excedeu_saldo:
         print("Operação falhou! Você não tem saldo suficiente na conta poupança.")
 
